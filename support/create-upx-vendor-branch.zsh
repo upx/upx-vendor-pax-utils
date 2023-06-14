@@ -78,3 +78,6 @@ rm -rf $tmpdir
 
 check_git_clean
 git checkout $current_branch
+
+# check that license files in master branch are up-to-date
+git diff --exit-code upx-vendor..master COPYING
